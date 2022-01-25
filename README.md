@@ -1,24 +1,24 @@
 # vuetest
 
-## Project setup
+## 项目搭建
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### 开始编译并进行热加载开发
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
+### 为生产进行编译和最小化
 ```
 npm run build
 ```
 
-### Lints and fixes files
+### 检查和修复文件
 ```
 npm run lint
 ```
 
-### Customize configuration
+### 自定义配置
 See [Configuration Reference](https://cli.vuejs.org/config/).

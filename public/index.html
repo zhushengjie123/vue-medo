@@ -1,17 +1,32 @@
 <!DOCTYPE html>
 <html lang="">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title><%= htmlWebpackPlugin.options.title %></title>
-  </head>
-  <body>
-    <noscript>
-      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
-    </noscript>
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <!-- 配置页签图标，下面这个路径就等同于./ -->
+  <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+  <!-- 引入bootstrap,第三方样式(axios案例) -->
+  <!-- <link rel="stylesheet" href="<%= BASE_URL %>css/bootstrap.css"> -->
+  <!-- 清除默认样式 -->
+  <link rel="stylesheet" href="<%= BASE_URL %>css/normalize.css">
+  <!-- 配置排序图标 -->
+  <link rel="stylesheet" href="http://at.alicdn.com/t/font_3114378_jbt0e4qwd9l.css">
+  <!-- 配置网页标题，从package.js里面找到name -->
+  <title>
+    <%= htmlWebpackPlugin.options.title %>
+  </title>
+</head>
+
+<body>
+  <!-- 当浏览器不支持js时，noscript中的元素就会被渲染 -->
+  <noscript>
+    <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled.
+        Please enable it to continue.</strong>
+  </noscript>
+  <div id="app"></div>
+  <!-- built files will be auto injected -->
+</body>
+
 </html>
